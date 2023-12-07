@@ -16,7 +16,6 @@
 /.notebooks/
 
 # Specific filetypes
-*.pdf
 *.parquet
 
 /.vscode
