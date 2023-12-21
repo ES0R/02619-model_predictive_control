@@ -1,11 +1,5 @@
 function xdot = ModifiedFourTankSystem(t,x,u,d,p)
-    % MODIFIEDFOURTANKSYSTEM Model dx/dt = f(t,x,u,d,p) for Modified 4-tank System
-    %
-    % This function implements a differential equation model for the
-    % modified 4-tank system.
-    %
-    % Syntax: xdot = ModifiedFourTankSystem(t,x,u,d,p)
-    % Unpack states, MVs, and parameters
+
     m = x; % Mass of liquid in each tank [g]
     F = [u; d]; % Flow rates [cm3/s]
     a = p(1:4,1); % Pipe cross sectional areas [cm2]
@@ -29,3 +23,5 @@ function xdot = ModifiedFourTankSystem(t,x,u,d,p)
     xdot(3,1) = rho*(qin(3,1)-qout(3,1)+F(3)); % Mass balance Tank 3
     xdot(4,1) = rho*(qin(4,1)-qout(4,1)+F(4)); % Mass balance Tank 4
 end
+
+

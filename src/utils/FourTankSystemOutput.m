@@ -1,6 +1,4 @@
 function z = FourTankSystemOutput(x,p)
-% FOURTANKSYSTEMOUTPUT Level for the lower tanks in the four tank system
-%
 % Syntax: z = FourTankSystemOutput(x,p)
 % Extract states and parameters
 m = x(1:2,1);

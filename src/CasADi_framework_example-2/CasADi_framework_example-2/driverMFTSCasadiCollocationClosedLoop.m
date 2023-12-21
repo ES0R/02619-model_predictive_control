@@ -13,8 +13,8 @@ addpath(         'cdekf'               );
 
 
 % Set casadiPath
-% casadiPath = '';
-% addpath( genpath(casadiPath) );
+casadiPath = 'C:\Users\limez\OneDrive\Documents\casadi-3.6.4-windows64-matlab2018b';
+addpath( genpath(casadiPath) );
 
 %% Save Plot/Data
 
